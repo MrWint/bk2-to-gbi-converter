@@ -1,0 +1,15 @@
+[package]
+name = "bk2-to-gbi-converter"
+version = "0.1.0"
+authors = ["MrWint"]
+edition = "2018"
+
+[features]
+sdl = ["sdl2"]
+
+[dependencies]
+clap = "2"
+gambatte = { path = "gambatte" }
+json = "0.11.14"
+zip = "0.5"
+sdl2 = { version = "0.32", features = ["bundled", "static-link"], optional = true }
