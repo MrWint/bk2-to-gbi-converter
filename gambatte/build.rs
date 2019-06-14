@@ -3,7 +3,6 @@ extern crate cc;
 use std::path::Path;
 
 fn main() {
-  println!("cargo:rustc-link-lib=shell32");
   cc::Build::new()
       .cpp(true)
       .flag_if_supported("-Wno-unused-parameter")
